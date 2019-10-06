@@ -15,8 +15,22 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
+      redirect: '/dashboard'
+    },
+    {
+      path: '/dashboard',
+      name: 'dashboard',
       component: Home
+    },
+    {
+      path: '/registers',
+      name: 'registers',
+      component: () => import('./views/Registers.vue')
+    },
+    {
+      path: '/settings',
+      name: 'settings',
+      component: () => import('./views/Settings.vue')
     },
     {
       path: '/about',
