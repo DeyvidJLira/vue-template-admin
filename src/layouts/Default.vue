@@ -30,7 +30,7 @@
           </v-list-item>
 
           <v-list-item>
-            <v-btn text small color="error">SAIR</v-btn>            
+            <v-btn text small color="error" @click="logout">SAIR</v-btn>            
           </v-list-item>
 
         </v-list>
@@ -57,12 +57,19 @@
     <v-content>
       <slot />
     </v-content>
+
+    <Footer></Footer>
   </v-app>
 </template>
 
 <script>
+import Footer from '@/components/Footer.vue';
+
 export default {
   name: 'default',
+  components: {
+    Footer
+  },
   data() {
     return {
       drawer: false,
@@ -71,6 +78,11 @@ export default {
           { title: 'Registros ', icon: 'clipboard-list', to: { name: 'registers' } },
           { title: 'Configurações', icon: 'settings', to: { name: 'settings' } },
         ],
+    }
+  },
+  methods: {
+    logout() {
+      this.$router.push({path: '/login'})
     }
   }
 };
