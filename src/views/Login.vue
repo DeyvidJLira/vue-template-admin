@@ -64,7 +64,7 @@
 
       <v-col cols="12">
         <h1 class="subtitle-1 font-weight-bold mb-3">
-          Created and Designed by <a href="https://deyvidjlira.com">Deyvid Jaguaribe</a>
+          Created and Designed by <a href="https://deyvidjlira.com">Deyvid Jaguaribe</a> with Vuetify
         </h1>
       </v-col>
 
