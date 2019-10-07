@@ -1,5 +1,9 @@
 # Template: Painel Administrativo em Vue
 
+## Login
+Username: Admin
+Password: 123456
+
 ## Project setup
 ```
 npm install
