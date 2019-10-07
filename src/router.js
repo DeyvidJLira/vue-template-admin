@@ -39,10 +39,5 @@ export default new Router({
       name: 'settings',
       component: () => import('./views/Settings.vue')
     },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
   ]
 })
