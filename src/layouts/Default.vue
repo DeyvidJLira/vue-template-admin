@@ -3,7 +3,7 @@
     <nav>
       <v-app-bar flat app elevation=4>
         <v-app-bar-nav-icon  class="grey--text" @click="drawer = !drawer"></v-app-bar-nav-icon>      
-        <v-toolbar-title class="headline ">
+        <v-toolbar-title class="headline">
           <span>Demonstração </span>
           <span class="font-weight-light">Painel Administrativo</span>
         </v-toolbar-title>
